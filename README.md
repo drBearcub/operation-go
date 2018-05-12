@@ -15,11 +15,12 @@ Clone the repo:
 
 Download Go's present tool:
 
-`go get code.google.com/p/go.tools/cmd/present`
+`go get golang.org/x/tools/present`
 
 cd into project directory
 
-`present -base=.`
+`go build golang.org/x/tools/cmd/present`
+`./present -base=. -orighost=localhost`
 
 Visit `http://127.0.0.1:3999` in your browser
 
