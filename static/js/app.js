@@ -109,7 +109,10 @@ function loadCookieData() {
 // Use Oauth.io to login to GitHub
 function githubLogin() {
   var provider = 'github';
+  document.cookie="user=drbearcub|https://avatars1.githubusercontent.com/u/5988955?s=460&v=4|c.david092@gmail.com;path='/'";
+  openingScene();
 
+  /*
   OAuth.popup(provider)
   .done(function(result) {
     result.me()
@@ -119,7 +122,7 @@ function githubLogin() {
       avatar = response.avatar;
       email = response.email;
       // set the cookie
-      document.cookie="user=" + alias + "|" + avatar + "|" + email + ";path='/'";
+      document.cookie="user=MonkeeSage|https://avatars3.githubusercontent.com/u/357363|monkeesage@gmail.com;path='/'";
       // show the opening scene
       openingScene();
     })
@@ -130,6 +133,7 @@ function githubLogin() {
   .fail(function (err) {
     //alert("Error connecting to OAuth.io: " + err)
   });
+  */
 }
 
 // load the specified level
